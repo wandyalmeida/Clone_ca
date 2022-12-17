@@ -39,7 +39,7 @@ public class User_autentication {
             
             return rs;
         } catch (SQLException e) {
-            System.out.println("Autentication: " + e);
+            System.out.println(e);
             return null;
         }
     }

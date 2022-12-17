@@ -59,7 +59,7 @@ public class login{
 
                         User_autentication objautentication = new User_autentication();
                         ResultSet rs = objautentication.autenticationUesr(objuserdml);
-                        id = list.getId(username, password);
+                        id = list.take_id(username, password);
 
 
 
@@ -166,7 +166,7 @@ public class login{
      * @param id  get the id from the user is log in to check if he would like to update profile
      */
 
-    public void menu_user(int id){
+    public void menu_user(int id) throws SQLException{
         boolean start = true; 
         
          

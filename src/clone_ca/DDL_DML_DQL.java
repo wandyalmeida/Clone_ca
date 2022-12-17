@@ -101,7 +101,7 @@ public class DDL_DML_DQL{
             insert_admin();
             return true; // return if the data was created.
         } catch (SQLException e) {
-            System.out.println("Create Schema and Tables: " + e);
+            System.out.println(e);
             return false; // return false if the data  is already created.
         }
     }
@@ -130,7 +130,7 @@ public class DDL_DML_DQL{
             pstm.execute();
             pstm.close();
         } catch (SQLException e) {
-            System.out.println("Sign UP User: " + e);
+            System.out.println(e);
         }
     }
     
@@ -172,7 +172,7 @@ public class DDL_DML_DQL{
             insert_adminfk(id_equation); //will move to insert_adminfk and insert the equation_id on the Admin_user.
             
         } catch (SQLException e) {
-            System.out.println("add equation: " + e);
+            System.out.println(e);
         }
     }
     
@@ -200,7 +200,7 @@ public class DDL_DML_DQL{
             pstm.close();  
             
         } catch (SQLException e) {
-            System.out.println("insert admin foreign key: " + e);
+            System.out.println(e);
         }
     }
    
@@ -230,7 +230,7 @@ public class DDL_DML_DQL{
             pstm = conn.prepareStatement(delete);
             pstm.execute();
         } catch (SQLException e) {
-            System.out.println("insert Admin: " + e);// show this message if this method get a error.
+            System.out.println(e);// show this message if this method get a error.
         }
     }
 
@@ -267,7 +267,7 @@ public class DDL_DML_DQL{
             }
             
         } catch (SQLException e) {
-            System.out.println("Check user: " + e);// show this message if this method get a error.
+            System.out.println(e);// show this message if this method get a error.
         }
     }
 
@@ -316,7 +316,7 @@ public class DDL_DML_DQL{
             }
             
         } catch (SQLException e) {
-            System.out.println("Find User: " + e);// show this message if this method get a error.
+            System.out.println(e);// show this message if this method get a error.
         }
     }
     
@@ -349,11 +349,11 @@ public class DDL_DML_DQL{
                
             }
         } catch (SQLException e) {
-            System.out.println("See equation: " + e);// show this message if this method get a error.
+            System.out.println(e);// show this message if this method get a error.
         }
     }
 
-    public int getId(String username, String password){
+    public int take_id(String username, String password){
         String sql = "select * from users where username = ? and password = ?";
 
         int id_user;
@@ -374,7 +374,7 @@ public class DDL_DML_DQL{
                                
             }
         } catch (SQLException e) {
-            System.out.println("Get ID: " + e);
+            System.out.println(e);
         }
         return 0;
     }
@@ -395,12 +395,12 @@ public class DDL_DML_DQL{
             pstm.execute();
             pstm.close();
         } catch (SQLException e) {
-            System.out.println("Update User: " + e);
+            System.out.println(e);
         }
     }
 
 
-    public void delete(User_get_set objdeleteDML){
+    public void delete_user(User_get_set objdeleteDML){
         String sql = "delete from users where user_id = ? ";
 
         
@@ -421,7 +421,7 @@ public class DDL_DML_DQL{
             }
             
         } catch (SQLException e) {
-            System.out.println("Delete usuario: " + e);
+            System.out.println(e);
         }
     }
     

@@ -23,7 +23,7 @@ public class ConnectionStart{
         Connection conn = null;
        
         try {
-            String dbName = "systemca";
+            String dbName = "Name of your SCHEMA";
             String DB_URL = "jdbc:mysql://localhost/" + dbName;
             String USER = "root";
             String PASS = "root";
@@ -31,7 +31,7 @@ public class ConnectionStart{
            
            
         } catch (SQLException e) {
-            System.out.println("Erro on the connection part " + e.getMessage());
+            System.out.println(e);
         }
         
         return conn;

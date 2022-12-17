@@ -72,7 +72,7 @@ public class SignUp{
          
          objRegularUserDML.setId_user(user_id);
          
-         objUserDDL.delete(objRegularUserDML);
+         objUserDDL.delete_user(objRegularUserDML);
     }
     
 }
