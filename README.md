@@ -1,2 +1,5 @@
 # Clone_ca
- This is a copy of my final project Please do not just copy and paste this code have to be change to work.
+ Please with you gona download this file.
+So you have to change some methods to work with this project, don't just copy and paste
+without check what you have to change you should put the mysql-connector on the libraries.
+This code don't have the Calculator method.
