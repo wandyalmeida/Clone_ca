@@ -96,7 +96,7 @@ public class login{
     /*
     admin menu
     */
-    public void admin(int id){
+    public void admin(int id) throws SQLException{
         boolean start = true; 
        
         
